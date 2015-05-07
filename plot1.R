@@ -7,7 +7,7 @@ data$Date <- as.Date(data$Date, "%d/%m/%Y")
 ##subset by dates (2007-02-01 and 2007-02-02)
 data2<-subset(data, Date == as.Date("2007-02-01") | Date == as.Date("2007-02-02"))
 
-##create histogram of global active power
+##create a histogram of global active power
 hist(data2$Global_active_power, breaks = 15, col="red", 
      main = "Global Active Power", xlab = "Global Active Power (kilowatts)")
 
